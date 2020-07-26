@@ -1,5 +1,3 @@
-@import 'cards';
-
 body {
   font-family: Helvetica;
 }
@@ -45,9 +43,7 @@ body {
   background-color: red;
   border-radius: 50%;
 }
-```
 
-```scss
 // _cards.scss
 .card {
   height: 230px;
@@ -100,4 +96,3 @@ body {
 .card-link:hover {
   opacity: 0.1;
 }
-```
