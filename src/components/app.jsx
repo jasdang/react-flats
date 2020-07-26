@@ -1,11 +1,11 @@
 import React from 'react';
-import Flat from './flat';
+import FlatList from './flat_list';
 
 const App = (props) => {
   return (
     <div className='container'>
       <div className='flat-list'>
-        <Flat />
+        <FlatList />
       </div>
       <div className='map-container'></div>
     </div>
