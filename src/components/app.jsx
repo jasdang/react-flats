@@ -3,7 +3,7 @@ import React from 'react';
 const App = (props) => {
   return (
     <div className='container'>
-      <div className='cards'></div>
+      <div className='flat-list'></div>
       <div className='map-container'></div>
     </div>
   );
