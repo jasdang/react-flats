@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import FlatList from './flat_list';
+import flats from '../../data/flats';
 import SimpleMap from './map';
 
 class App extends Component {
@@ -13,8 +14,8 @@ class App extends Component {
     };
   }
 
-  selectFlat = (event) => {
-    console.log(event.currentTarget);
+  selectFlat = (index) => {
+    console.log(index);
     // this.state({
     //   selectedFlat: flat,
     // });
@@ -24,7 +25,7 @@ class App extends Component {
     return (
       <div className='container'>
         <div className='flat-list'>
-          <FlatList selectFlat={this.selectFlat} />
+          <FlatList flats={flats} selectFlat={this.selectFlat} />
         </div>
         <div className='map-container'>
           <SimpleMap
