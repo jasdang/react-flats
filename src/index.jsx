@@ -7,5 +7,5 @@ import App from './components/app';
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<App content='World' />, root);
+  ReactDOM.render(<App />, root);
 }

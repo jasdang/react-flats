@@ -1,7 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 const App = (props) => {
-  return <div> {props.content} </div>;
+  return (
+    <div className='container'>
+      <div className='cards'></div>
+      <div className='map-container'></div>
+    </div>
+  );
 };
 
 export default App;
