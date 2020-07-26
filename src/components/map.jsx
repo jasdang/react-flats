@@ -16,7 +16,6 @@ class SimpleMap extends Component {
   }
 
   render() {
-    console.log(this.props.lat);
     return (
       // Important! Always set the container height explicitly
       <div style={{height: '100vh', width: '100%'}}>
