@@ -9,7 +9,7 @@ const App = (props) => {
         <FlatList />
       </div>
       <div className='map-container'>
-        <SimpleMap />
+        <SimpleMap lat='55' lng='55' />
       </div>
     </div>
   );

@@ -8,14 +8,15 @@ class SimpleMap extends Component {
     super(props);
     this.state = {
       center: {
-        lat: 59.95,
-        lng: 30.33,
+        lat: parseFloat(this.props.lat),
+        lng: parseFloat(this.props.lng),
       },
       zoom: 11,
     };
   }
 
   render() {
+    console.log(this.props.lat);
     return (
       // Important! Always set the container height explicitly
       <div style={{height: '100vh', width: '100%'}}>
