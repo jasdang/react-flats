@@ -14,22 +14,28 @@ class App extends Component {
         lat: 48.884211,
         lng: 2.34789,
       },
-      zoom: 11,
+      zoom: 12,
+      selectedFlatId: 0,
     };
   }
 
   selectFlat = (index) => {
     this.setState({
       center: flats[index],
+      selectedFlatId: index,
     });
     // console.log(this.state.center);
   };
 
   render() {
     return (
-      <div className='container'>
+      <div>
         <div className='flat-list'>
-          <FlatList flats={flats} selectFlat={this.selectFlat} />
+          <FlatList
+            flats={flats}
+            selectFlat={this.selectFlat}
+            selectedFlatId={this.state.selectedFlatId}
+          />
         </div>
         <div className='map-container' style={{height: '100vh', width: '100%'}}>
           <GoogleMapReact
